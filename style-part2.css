@@ -1,0 +1,516 @@
+/* Lily’s Florals Styling – Part 2 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fffaf5;
+  color: #333;
+  line-height: 1.6;
+  padding: 1rem;
+}
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #a0522d;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem;
+  background-color: #fdf6f0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #a0522d;
+  font-weight: bold;
+}
+/*  Quick Links */
+#quick-links {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#quick-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#quick-links li a:{
+  background-color: #c8a2c8; /* Lavender */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+#quick-links ul li a:hover {
+  color: #d2691e;
+  font-weight: bold;
+}
+/*  Promotions */
+#promotions {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#promotions img {
+  max-width: 60%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+/* Shop Page */
+#shop {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+/* Café Page */
+#cafe {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-item {
+  background-color: #fdf6f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+  font-size: 0.95rem;
+}
+.menu-item img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+/* Blog Page */
+#blog {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-post {
+  background-color: #fdf6f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.blog-post h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #a0522d;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #8b4513;
+}
+button.btn {
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #8b4513;
+}img {
+  max-width: 60%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+.menu-item img,
+.blog-post img,
+.product-card img {
+  width: 250px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-grid,
+  .menu-grid,
+  .blog-grid,
+  .contact-details {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  #enquiry,
+  #contact {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+header {
+  background-color: #fceae8; /* soft pink */
+  color: #5a3e36; /* deep brown */
+  padding: 1.5rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #fceae8; 
+  color: #5a3e36;
+  padding: 1rem;
+  text-align: center;
+}
+#hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+#hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fffaf5;
+}
+
+.hero-text {
+  margin-bottom: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  color: #a0522d;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  font-family: 'Lato', sans-serif;
+  color: #5a3e36;
+  margin-bottom: 1rem;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+/* Enquiry Page */
+#enquiry {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#enquiry h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#enquiry p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Lato', sans-serif;
+}
+
+form button.btn {
+  margin-top: 1.5rem;
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button.btn:hover {
+  background-color: #8b4513;
+}
+.service-card img {
+  width: 35%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+/* General Page Styling */
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fffaf5;
+  margin: 0;
+  padding: 0;
+  color: #5a3e36;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 1rem;
+  background-color: #fdf6f0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5a3e36;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+
+nav a:hover {
+  color: #a0522d;
+}
+
+/* Services Section */
+#services {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#services h1 {
+  font-size: 2.8rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 2rem;
+  color: #a0522d;
+}
+
+/* Individual Service Articles */
+#services article {
+  background-color: #fceae8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+#services article h2 {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+  color: #5a3e36;
+}
+
+#services article img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+#services article p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #5a3e36;
+}
+
+/* Final Service Card */
+.service-card {
+  background-color: #fceae8;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  max-width: 300px;
+  margin: 2rem auto;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+}
+
+.service-card img {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 0.5rem;
+  color: #5a3e36;
+}
+
+.service-card p {
+  font-size: 1rem;
+  color: #5a3e36;
+}
+
+/* Footer */
+footer {
+  background-color: #fdf6f0;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #a0522d;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #services article img {
+    max-width: 100%;
+  }
+
+  .service-card {
+    max-width: 90%;
+  }
+}
+.service-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.service-link:hover {
+  transform: scale(1.02);
+}
