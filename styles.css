@@ -1,0 +1,353 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #fdf6f0; /* Cream base */
+  color: #333;/ * Dark Charcoal */
+  line-height: 1.6;
+  padding: 0 2rem;
+}
+
+/*  Typography */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #6b4c3b; ; /* Terracotta */
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #a0522d; /* Sage Green */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a,
+#quick-links li a {
+  transition: all 0.3s ease;
+}
+
+/*  Navigation */
+header {
+  background-color: #c8a2c8; /* Blush Pink */
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+nav li a {
+  font-weight: bold;
+}
+
+/*  Hero Section */
+#hero {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#hero img {
+  max-width: 50%;
+  border-radius: 8px;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d8d4b2;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/*  Quick Links */
+#quick-links {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#quick-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#quick-links li a:{
+  background-color: #c8a2c8; /* Lavender */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+#quick-links ul li a:hover {
+  color: #d2691e;
+  font-weight: bold;
+}
+
+/*  Promotions */
+#promotions {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#promotions img {
+  max-width: 60%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/*  Footer */
+footer {
+  background-color: #c8a2c8; /* Blush Pink */
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+/* Floral Services Articles */
+#services article {
+  background-color: #fdf6f0; /* Soft cream */
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+/* Shop Page */
+#shop {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+/* Café Page */
+#cafe {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.menu-item {
+  background-color: #fdf6f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+  font-size: 0.95rem;
+}
+.menu-item img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+/* Blog Page */
+#blog {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.blog-post {
+  background-color: #fdf6f0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.blog-post h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.blog-post a {
+  text-decoration: none;
+  color: #a0522d;
+  font-weight: bold;
+}
+/* Enquiry Page */
+#enquiry {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+#enquiry h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#enquiry p {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Lato', sans-serif;
+}
+
+form button.btn {
+  margin-top: 1.5rem;
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+form button.btn:hover {
+  background-color: #8b4513;
+}
+/* Contact Page */
+#contact {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fdf6f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-details article {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  width: 300px;
+}
+
+.map-placeholder {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #888;
+}

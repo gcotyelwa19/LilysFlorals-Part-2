@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enquiry | Lily's Florals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style-part2.css">
+</head>
+<body>
+
+  <header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cafe.html">Café Corner</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="enquiry">
+      <h1>Send Us an Enquiry</h1>
+      <p>We’d love to hear from you! Whether it’s a bouquet request, workshop booking, or café question—drop us a note below.</p>
+
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="service">Service Type:</label>
+        <select id="service" name="service">
+          <option value="">-- Please choose --</option>
+          <option value="bouquet">Custom Bouquet</option>
+          <option value="workshop">Workshop Booking</option>
+          <option value="event">Event Styling</option>
+          <option value="cafe">Café Reservation</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn">Send Enquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Lily’s Florals. All rights reserved.</p>
+    <p><a href="contact.html">Visit our branches in Gqeberha & East London</a></p>
+  </footer>
+
+</body>
+</html>
