@@ -8,7 +8,7 @@
   <link rel="stylesheet" href= "css/style-part2.css">
 </head>
 <body>
-
+  
   <header>
     <nav aria-label="Main navigation">
       <ul>
@@ -25,6 +25,39 @@
   </header>
 
   <main>
+    <section class="gallery">
+   <h2>Our Featured Services</h2>
+
+  <div class="card">
+    <img src="images/Flower desserts-thumb.jpg" alt="Flower desserts" data-full="images/Flower desserts-full.jpg">
+    <div class="card-content">
+      <h3>Flower Desserts</h3>
+      <p>Intricately crafted floral-themed desserts perfect for events and gifting.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/Pressed Flower Candles-thumb.jpg" alt="Pressed Flower Candles" data-full="images/Pressed Flower Candles-full.jpg">
+    <div class="card-content">
+      <h3>Pressed Flower Candles</h3>
+      <p>Hand-poured candles featuring real pressed flowers for a botanical glow.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="images/Gift Packages-thumb.jpg" alt="Gift Packages" data-full="images/Gift Pacakges-full.jpg">
+    <div class="card-content">
+      <h3>Gift Packages</h3>
+      <p>Curated floral gift bags with seasonal blooms and artisanal touches.</p>
+    </div>
+  </div>
+</section>
+
+<section class="service-search">
+  <label for="serviceFilter">Search Services:</label>
+  <input type="text" id="serviceFilter" placeholder="e.g. bouquet, wedding, workshop">
+</section>
+
     <section id="services">
       <h1>Our Floral Services</h1>
 
@@ -85,10 +118,22 @@
       </a>
 
     </section>
+
   </main>
+    <!-- Lightbox Container -->
+  <div id="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Full-size image">
+  </div>
+
+  <script src="js/scripts.js"></script>
+
 
   <footer>
     <p>&copy; 2025 Lily’s Florals. All rights reserved.</p>
     <p><a href="contact.html">Visit our branches in Gqeberha & East London</a></p>
   </footer>
+</body>
+</html>
+
 

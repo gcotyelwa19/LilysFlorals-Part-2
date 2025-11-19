@@ -47,11 +47,36 @@
         </article>
       </div>
 
-      <div class="map-placeholder">
-        <p>[Map coming soon – or embed Google Maps here]</p>
-      </div>
+      <section class="map">
+        <h2>Visit Us</h2>
+  "<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3346.5152615039237!2d27.90751657512686!3d-32.99018847357525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e66e1b7cdebd5f3%3A0x8b0650ad083348c9!2sHarry&#39;s%20Flower%20Basket!5e0!3m2!1sen!2sza!4v1763576520873!5m2!1sen!2sza" 
+  width="600"
+   height="450" 
+   style="border:0;" 
+   allowfullscreen=""
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>"
     </section>
   </main>
+  <section id="contact-form">
+  <h2>Contact Us</h2>
+  <form action="https://formspree.io/f/mzzogaoz" method="POST">
+    <input type="hidden" name="_subject" value="New Contact Message from Lily’s Florals">
+    <input type="hidden" name="_next" value="thankyou.html">
+
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
 
   <footer>
     <p>&copy; 2025 Lily’s Florals. All rights reserved.</p>
