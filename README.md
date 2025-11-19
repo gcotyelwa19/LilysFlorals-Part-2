@@ -45,3 +45,42 @@ Seasonal Tarts. (2025). [Image]. Available at: https://za.pinterest.com/pin/8402
 Sympathy & Memorials Florals. (2025). [Image]. Available at: https://za.pinterest.com/pin/97671885662906669/ (Accessed: 25 September 2025).
 
 Workshop. (2025). [Image]. Available at: https://za.pinterest.com/pin/3025924745232476/ (Accessed: 23 September 2025).
+
+
+
+## Lily's Florals: Part 3 Details
+
+### JavaScript Features Implemented
+- Dynamic search filter on Services page
+- Lightbox gallery on Shop page
+- Quote calculation logic on Enquiry form
+- Client-side form validation
+- Formspree integration for both forms
+
+### SEO Enhancements
+- Unique title and meta descriptions on each page
+- Semantic HTML structure
+- Descriptive alt text and link labels
+- Clean heading hierarchy and navigation
+
+---
+
+## Changelog — Part 3
+
+### 2025-11-19
+- Added lightbox gallery
+- Implemented dynamic search filter
+- Built enquiry form with quote logic and Formspree
+- Created contact form with Formspree and embedded map
+- Validated HTML/CSS
+- Improved accessibility and SEO
+- Final push to GitHub
+
+---
+
+## References
+
+- [Formspree](https://formspree.io)
+- [Google Maps Embed API](https://developers.google.com/maps/documentation/embed)
+- [W3Schools Lightbox Tutorial](https://www.w3schools.com/howto/howto_js_lightbox.asp)
+- [Stack Overflow](https://stackoverflow.com)
